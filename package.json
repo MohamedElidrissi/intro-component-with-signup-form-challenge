@@ -1,0 +1,21 @@
+{
+  "name": "intro-component-with-signup-form",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development gulp watch",
+    "build:dev": "cross-env NODE_ENV=development gulp",
+    "build:prod": "cross-env NODE_ENV=production gulp"
+  },
+  "author": "Mohamed ELIDRISSI",
+  "license": "MIT",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "autoprefixer": "^9.7.4",
+    "cross-env": "^7.0.2",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-postcss": "^8.0.0",
+    "tailwindcss": "^1.2.0"
+  }
+}

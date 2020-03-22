@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-primary-red h-screen flex flex-col">
+  <main class="text-white text-center flex-auto flex flex-col lg:flex-row lg:items-center lg:text-left m-6 lg:mx-auto lg:max-w-4xl xl:max-w-6xl">
+    <div class="pt-16 pb-12 lg:flex-1 lg:mr-6">
+      <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">Learn to code by<br> watching others</h1>
+      <p class="text-sm lg:text-base mt-4">
+        See how experienced developers solve problems in real-time.
+        Watching scripted tutorials is great, but understanding how developers think is invaluable.
+      </p>
+    </div>
+    <div class="py-4 lg:flex-1">
+      <div class="bg-accent-blue text-sm rounded-md px-8 py-4 cshadow lg:text-center">
+        <p><strong>Try it free 7 days</strong> then &dollar;20/mo. thereafter</p>
+      </div>
+      <div class="bg-white rounded-md mt-6 p-4 lg:p-8 cshadow">
+        <form class="text-right">
+          <div class="form-control">
+            <label for="firstName" class="sr-only">First Name</label>
+            <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+            <span class="hidden text-xs font-light text-red-500">First Name cannot be empty</span>
+          </div>
+          <div class="form-control">
+            <label for="lastName" class="sr-only">Last Name</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+            <span class="hidden text-xs font-light text-red-500">Last Name cannot be empty</span>
+          </div>
+          <div class="form-control">
+            <label for="emailAddress" class="sr-only">Email Address</label>
+            <input type="email" name="emailAddress" id="emailAddress" placeholder="Email Address" required>
+            <span class="hidden text-xs font-light text-red-500">Looks like this is not an email</span>
+          </div>
+          <div class="form-control">
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <span class="hidden text-xs font-light text-red-500">Password cannot be empty</span>
+          </div>
+          <div class="form-control">
+            <button type="submit" class="bg-primary-green hover:bg-primary-light-green uppercase rounded px-6 py-4 cshadow-inset">Claim your free trial</button>
+          </div>
+          <p class="text-neutral-grayish-blue text-xs text-center">By clicking the button, you are agreeing to our
+            <a href="#" class="text-primary-red font-bold">Terms and Services</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="p-4">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopenner noreferrer">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/MohamedElidrissi" rel="noopener noreferrer">Mohamed ELIDRISSI</a>.
+    </p>
+  </footer>
+  <script>
+    document.forms[0].addEventListener('submit', (e) => (e.preventDefault()));
+  </script>
+</body>
+</html>
