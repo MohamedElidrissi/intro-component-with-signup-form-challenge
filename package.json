@@ -8,7 +8,7 @@
   },
   "author": "Mohamed ELIDRISSI",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
     "autoprefixer": "^9.7.4",
     "cross-env": "^7.0.2",
